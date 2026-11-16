@@ -36,6 +36,7 @@ jobs:
         with:
           name: firmware
           path: .pio/build/esp12e/*.bin
+          retention-days: 2
       
       - name: Create Release
         uses: softprops/action-gh-release@v2
